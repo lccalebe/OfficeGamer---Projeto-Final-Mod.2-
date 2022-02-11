@@ -1,0 +1,69 @@
+body{
+    background-color: darkmagenta;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+label{
+    color: aliceblue;
+}
+
+.info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 25px;
+    width: 390px;
+    height: 150px;
+    gap: 8px;
+    box-shadow: 0 0 1em gold;
+    border-radius: 8px 8px 0px 0px;
+    margin-top: 6em;
+    border: solid 1px black;
+    border-bottom: none;
+}
+
+.inputs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 390px;
+    height: 230px;
+    gap: 8px;
+    font-size: 28px;
+    box-shadow: 0 0 1em gold;
+    border-radius: 0px 0px 8px 8px ;
+    border: solid 1px black;
+    border-top: none;
+}
+
+#error{
+    font-size: 20px;
+    color: red;
+}
+
+#cidade, #estado, #rua, #bairro, #numero{
+    border: solid 2px black;
+    background-color: rgb(255, 255, 255);
+    height: 21px;
+}
+
+#enviar{
+    border: solid 2px black;
+    height: 30px;
+}
+
+#btn{
+    width: 7em;
+    height: 2em;
+    font-size: 14px;
+    background-color: gold;
+    border: solid 2px black;
+}
+
+
+
+
