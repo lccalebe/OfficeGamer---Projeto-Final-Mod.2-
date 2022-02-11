@@ -2,3 +2,16 @@
     font-size: 15px;
     color: rgb(202, 60, 60)
 }
+
+#register{
+    font-size: 15px;
+    color: rgb(38, 197, 38);
+}
+
+.ok{
+    border: solid 1px rgb(53, 240, 53)
+}
+
+.err{
+    border: solid 1px red;
+}
