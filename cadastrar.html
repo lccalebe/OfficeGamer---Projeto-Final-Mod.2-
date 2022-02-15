@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cadastro1.css">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js" defer></script>
+    <script src="index.js"defer></script>
+    
+    
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="./index.html"><img src="./imagens/OfficeGamer.jpeg" height="50px" width="150px"></a>
+      
+            <ul class="nav-list">
+              <li><a href="/">Sobre</a></li>
+              <li><a href="#card">Planos</a></li>
+              <li><a href="/">Contatos</a></li>
+              <li><a href="/">Login</a></li>
+            </ul>
+          </nav>
+    </header>
+    <main>
+    <div>
+        <div class="container">
+            <form action=""> 
+            
+                <legend><b>Identificação</b></legend>
+                <br>
+                <!--Dados pessoais-->
+                <form id="register-form">
+                    <div class="row">
+            
+                        <div class="name">
+                            <label for="name">Nome:</label>
+                            <input id="name" name="name" type="text" placeholder="Digite seu nome"class="inputuser"required>
+                        </div>
+            
+                        <div class="sobrenome">
+                            <label for="sobrenome" class="">Sobrenome:</label>
+                            <input type="text" name="sobrenome" id="sobrenome" placeholder="Digite seu Sobrenome"class="inputuser"required>
+                        </div>
+            
+                        <div class="email">
+                            <label for="email">E-mail:</label>
+                            <input type="email" name="email" id="email" placeholder="Digite seu E-mail"class="inputuser"required>
+                        </div>
+            
+                        <div class="password">
+                            <label for="senha">Senha:</label>
+                            <input type="password" name="password" id="password" placeholder="Digite sua senha"class="inputuser"required>
+                        </div>
+                        <!--Fiz a mudança do class para name-->
+                        <div class="confirm"> 
+                              <label for="confirm">Confirme sua senha:</label>
+                                <input type="password" name="confirm-password" id="confirm-password" placeholder="Confirme sua senha"class="inputuser"required>
+                        </div>        
+                         <!--Endereço-->
+                        <div class="input box">
+                            <label>Digite o CEP:</label>
+                            <input type="text" id="enviar" placeholder="Aqui" class="inputuser"required>
+                            <br>
+                            <button id="btn">Enviar</button>
+                                    
+                            <h1 id="error"></h1>
+                        </div>
+                        <br>
+                                                          
+                        <input id="cidade" placeholder="Cidade" type="text" class="inputuser"required>                                        
+                        <input id="estado" placeholder="Estado" type="text"class="inputuser"required>                                                              
+                        <input id="rua" placeholder="Rua" type="text" class="inputuser"required>                     
+                        <input id="bairro" placeholder="Bairro" type="text"class="inputuser"required>                                        
+                        <input id="Número" placeholder="Número" type="text"class="inputuser"required>
+                        </div>
+                                        
+                         <div class="checkbox">
+                            <input type="checkbox" name="checkbox" id="checkbox">
+                            <label for="checkbox">Eu li e aceito os <a href="./termos.html">termos de uso</a></label>
+                        </div>
+                            <br>
+                        <div class="btn">
+                                      
+                            <button id="btn">Registrar</button>
+                            </div>
+                            <p id="error-validation"></p>
+                        
+                    </div> 
+                </form>    
+            </form>
+            
+        </div>
+        
+    </div>
+        
+        
+</main>
+
+
+<footer>
+    <div class="footer-content">
+        <h3>Office Gamer</h3>
+        <p>Invista no seu sucesso organize sua rotina com ótimos produtos faça parte do time da Office Gamer. </p>
+        
+        <ul class="socials">
+            <li><a href="#"><i class="fa fa-facebook"> </i></a></li>
+            <li><a href="#"><i class="fa fa-twitter"> </i></a></li>
+            <li><a href="#"><i class="fa fa-instagram"></i> </a></li>
+            <li><a href="#"><i class="fa fa-linkedin-square"></i> </a></li>
+          
+        </ul>
+    </div>
+    <div class="footer-bottom">
+        <p>copyright &copy;2022 officeGamer. designed by Grupo 1</p>
+
+    </div>
+</footer>
+
+
+  
+
+</body>
+</html>
