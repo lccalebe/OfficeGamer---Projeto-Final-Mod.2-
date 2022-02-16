@@ -44,11 +44,13 @@ nav{
     letter-spacing: 3px;
     margin-left: 32px;
 }
-#login .container #login-row #login-column #login-box {
+#login-box{
+    height: 400px;
+}
+#login .container #login-row #login-column  {
     margin-top: 130px;
     margin-bottom: 80px;
     max-width: 600px;
-    height: 320px;
     border: 1px solid #9C9C9C;
     background-color: #EAEAEA;
   }
@@ -64,9 +66,13 @@ nav{
     cursor: pointer;
     display: flex;
     justify-content: space-between;
+    margin-top: 20px;
  
   }
   .btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding-left: 10px;
     border-radius: 10%;
   }
@@ -150,3 +156,4 @@ nav{
 @media (max-width:500px){
    
 }
+
