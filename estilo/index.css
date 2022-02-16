@@ -67,6 +67,26 @@ nav{
         background-image: linear-gradient(to left, #eca2e0, #ca83c6, #a764ad, #854895, #632c7d, #662f7c, #69337a, #6c3679, #915a8f, #b381a7, #d2a9c2, #efd4e1);
         box-shadow: 0 0 20px 10px rgba(129, 128, 128, 0.712);
     }
+.box-list{
+    color:rgb(20, 204, 236);
+    font-size: 0px;
+    position:absolute;
+    list-style: none;
+    display: flex;
+    width:1100px;
+    margin-top:250px;
+    justify-content:space-between;
+    
+
+}
+.nomebox{
+    padding:5px;
+    margin-top:-48px;
+    font-family:fantasy;
+    font-size:19px;
+    border:hidden;
+    box-shadow: 0 0 20px 10px rgba(129, 128, 128, 0.712);
+}
 
 .card{
 
