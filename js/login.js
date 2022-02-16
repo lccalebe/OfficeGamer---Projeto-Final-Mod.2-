@@ -1,55 +1,39 @@
-let erro = document.querySelector("#error-validation");
-let submit = document.querySelector("#btn");
-let nome = document.querySelector("#name");
-let senha = document.querySelector("#password");
-let confirrm = document.querySelector("#confirm-password")
-let email= document.querySelector("#email");
-let sobrenome = document.querySelector("#sobrenome");
-let cb = document.querySelector("#checkbox");
+$("#enviar").click(function(event){
 
+    event.preventDefault()
 
-submit.addEventListener('click', function(event){
-    event.preventDefault();
-
-    try {
-        if(nome.value == "" || nome.value.length < 3){
-            throw `Digite um nome válido.`;
-        }
-
-        if(sobrenome.value == "" || sobrenome.value.length < 3){
-            throw `Digite um sobrenome válido.`;
-        }
-
-        if(email.value.indexOf("@") == -1 || email.value.indexOf(".") == -1){
-            throw `E-mail inválido.`;
-        }
-
-       
-        if(senha.value.length < 8){
-            throw `faça uma senha com 8 caracteres.`;
-        }else{
-            erro.innerHTML = "";
-        }
-
-        if(confirrm.value !== senha.value){
-            throw `Sua senha não está correta.`
-        }
-
-        //if(cb.value !== true){
-        //    throw `é importante ler e aceitar os termos de uso.`
-        //}else{
-        //    erro.innerHTML = "";
-        //}
-
-        window.location.href = "./teste.html"
-        
-    } 
+    var login = $("#username").val();
+    var senha = $("#password").val();
     
-    catch (error) {
-        erro.innerHTML = error;
+    if(login.indexOf("@") == -1 || login.indexOf(".") == -1){
+    
+        document.getElementById("msgn-email").innerHTML = "O email precisa ter @ ou .";
+        var loginValido = false
+            
+    } else {
+    
+        document.getElementById("msgn-email").innerHTML = "";
+        var loginValido = true;
+    
+    }
+
+    if(senha.length < 8){
+    
+        document.getElementById("msgn-senha").innerHTML = "senha invalida, favor inserir uma senha com mais de 8 digitos";
+        var senhaValida = false;
+        
+            
+    } else {
+    
+        document.getElementById("msgn-senha").innerHTML = "";
+        var senhaValida = true;
+    
     }
 
 
+    if(loginValido == true && senhaValida == true){
+        window.location.href = "index.html"
+    }
 
-});
 
+})

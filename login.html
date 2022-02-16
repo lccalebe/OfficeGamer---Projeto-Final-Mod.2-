@@ -13,6 +13,8 @@
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <link rel="stylesheet" href="./style/login.css">
+<script src="js/jquery.js" defer></script>
+<script src="js/login.js" defer></script>
 </head>
 
 <body>
@@ -45,7 +47,7 @@
                               </div>
                             <div class="form-group">
                                 <label for="password" class="text-info">Senha:</label><br>
-                                <input type="text" name="password" id="password" class="form-control">
+                                <input type="password" name="password" id="password" class="form-control">
                                 <small id="msgn-senha"></small>
                               </div>
                               <div class="form-group" id="textos">
@@ -54,7 +56,7 @@
                               </div>
                               
                               <div class="form-group">
-                              <button  class="btn btn-info btn-md" value="submit">Enviar</button>
+                              <button  class="btn btn-info btn-md" id="enviar" value="submit">Enviar</button>
                             </div>
                           
                         </form>
