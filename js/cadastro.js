@@ -1,5 +1,5 @@
 let erro = document.querySelector("#error-validation");
-let submit = document.querySelector("#btn");
+let submit = document.querySelector("#btn-registrar");
 let nome = document.querySelector("#name");
 let senha = document.querySelector("#password");
 let confirrm = document.querySelector("#confirm-password")
@@ -16,14 +16,16 @@ let msgSenha = document.querySelector("#msgn-senha");
 let msgConfirrm = document.querySelector("#msgn-confirm");
 
 function validaForm(){
+
     if(nome == false  || sobrenome == false  || email == false || senha == false || confirrm == false || cb.checked == false){
         erro.innerHTML = "tente novamente"
     }else{
         register.innerHTML = "usuario cadastrado com sucesso";
         setTimeout(() => {
-            window.location.href = "./teste.html"
+            window.location.href = "index.html";
         }, 2000);
     }
+    console.log("certo")
 }
 
 submit.addEventListener('click', function(event){

@@ -150,6 +150,33 @@ nav{
     margin-left: 32px;
 }
 
+#error-validation{
+    font-size: 15px;
+    color: rgb(202, 60, 60)
+}
+
+#register{
+    font-size: 15px;
+    color: rgb(5, 100, 5);
+}
+
+.ok{
+    border: solid 2px rgb(47, 218, 47)
+}
+
+.err{
+    border: solid 2px red;
+}
+
+#error{
+    color: red;
+    font-size: 14px;
+}
+
+#esqueci-senha{
+    margin-left: 150px;
+    font-size: 15px;
+}
 
 footer{
     display: block;
