@@ -1,22 +1,24 @@
-$("#enviarNovaSenha").click(function(){
+$("#enviar").click(function(event){
 
-    var senha = $("#novaSenha").val();
-    var confirmaSenha = $("#confirmSenha").val();
+    event.preventDefault();
+
+    var senha = $("#password").val();
+    var confirmaSenha = $("#nova-password").val();
 
     if(senha != confirmaSenha ){
 
-        document.getElementById("mensagem").innerHTML = "Senhas estão diferentes";
+        document.getElementById("msgn-senha").innerHTML = "Senhas estão diferentes";
 
     } else {
        
-        document.getElementById("mensagem").innerHTML = "";
+        document.getElementById("msgn-senha").innerHTML = "";
       
         if(confirmaSenha.length < 8){
     
-            document.getElementById("mensagem").innerHTML = "senha muito curta";
+            document.getElementById("msgn-senha2").innerHTML = "senha muito curta";
     
         } else {
-            document.getElementById("mensagem").innerHTML = ""
+            document.getElementById("msgn-senha2").innerHTML = ""
         }
 
         window.location.href = "index.html";

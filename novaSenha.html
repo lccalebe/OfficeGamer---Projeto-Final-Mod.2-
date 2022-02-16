@@ -12,6 +12,8 @@
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="js/jquery.js" defer></script>
+<script src="js/novaSenha.js" defer></script>
   <link rel="stylesheet" href="./style/login.css">
 </head>
 
@@ -42,16 +44,16 @@
                             <h3 class="text-center text-info">Recuperar senha</h3>
                             <div class="form-group">
                                 <label for="password" class="text-info">Senha:</label><br>
-                                <input type="text" name="password" id="password" class="form-control">
+                                <input type="password" name="password" id="password" class="form-control">
                                 <small id="msgn-senha"></small> <div class="form-group">
                                     
-                                    <label for="password" class="text-info">Confirme sua senha:</label><br>
-                                    <input type="text" name="password" id="password" class="form-control">
-                                    <small id="msgn-senha"></small>
+                                    <label for="nova-password" class="text-info">Confirme sua senha:</label><br>
+                                    <input type="password" name="password" id="nova-password" class="form-control">
+                                    <small id="msgn-senha2"></small>
                               </div>
                                                           
                               <div class="form-group">
-                              <button  class="btn btn-info btn-md" value="submit">Enviar</button>
+                              <button  class="btn btn-info btn-md" value="submit" id="enviar">Enviar</button>
                             </div>
                           
                         </form>
