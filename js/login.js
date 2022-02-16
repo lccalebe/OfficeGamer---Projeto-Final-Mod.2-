@@ -8,7 +8,7 @@ $("#enviar").click(function(event){
     if(login.indexOf("@") == -1 || login.indexOf(".") == -1){
     
         document.getElementById("msgn-email").innerHTML = "O email precisa ter @ ou .";
-        var loginValido = false
+        var loginValido = false;
             
     } else {
     

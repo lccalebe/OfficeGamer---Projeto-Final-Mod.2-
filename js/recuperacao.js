@@ -1,20 +1,23 @@
 
-function confirmacao(){
-var recuperaSenha = $("#email").val();
+$("#enviar").click(function(event){
 
-if(recuperaSenha.indexOf("@") == -1 || recuperaSenha.indexOf(".") == -1){
+    event.preventDefault();
     
-    document.getElementById("aviso").innerHTML = "O email precisa ter @ ou .";
+    var recuperaSenha = $("#username").val();
+
+    if(recuperaSenha.indexOf("@") == -1 || recuperaSenha.indexOf(".") == -1){
+    
+        document.getElementById("msgn-email").innerHTML = "O email precisa ter @ ou .";
         
-} else {
+    } else {
 
-    document.getElementById("aviso").innerHTML = "";
-    
-    window.location.href = "enviado.html"
-
-}
-
+        document.getElementById("msgn-email").innerHTML = "";
+        
+        window.location.href = "novaSenha.html"
 
 }
+
+
+})
 
 
