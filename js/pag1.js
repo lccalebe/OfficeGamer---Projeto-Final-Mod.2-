@@ -9,7 +9,7 @@ document.querySelector('body').onmouseleave = function(event) {
 function assinarRedirect() {
     setTimeout(() => {
         window.location.href = "./cadastrar.html"
-    }, 1500);
+    }, 500);
 }
 
 //fim redirecionar

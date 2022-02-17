@@ -35,6 +35,25 @@ nav{
     padding: 20px;
     background-color: #020B10;
     color: #ffffff;
+}.box-list{
+    color:rgb(20, 204, 236);
+    font-size: 0px;
+    position:absolute;
+    list-style: none;
+    display: flex;
+    width:1100px;
+    margin-top:250px;
+    justify-content:space-between;
+    
+
+}
+.nomebox{
+    padding:5px;
+    margin-top:-48px;
+    font-family:fantasy;
+    font-size:19px;
+    border:hidden;
+    box-shadow: 0 0 20px 10px rgba(129, 128, 128, 0.712);
 }
 .box{
     padding: 30px;
@@ -57,12 +76,12 @@ nav{
     
         color:white;
         text-align: center;
-        margin-top:100px;
+        margin-top:60px;
         text-transform: uppercase;
         border:hidden;
         width:80%;
         margin-left: 130px;
-        margin-bottom: 20px;
+        margin-bottom: 40px;
         border-radius: 30px;
         background-image: linear-gradient(to left, #eca2e0, #ca83c6, #a764ad, #854895, #632c7d, #662f7c, #69337a, #6c3679, #915a8f, #b381a7, #d2a9c2, #efd4e1);
         box-shadow: 0 0 20px 10px rgba(129, 128, 128, 0.712);
@@ -72,17 +91,17 @@ nav{
 
     flex-direction: row;
     width:100%;
+    margin-top: 70px;
+    padding-bottom: 80px;
     height: auto;
     align-items: center;
     border: none;
-
 }
 
 .card img{
     width: 100%;
     height: 100%;
-
-
+    
 }
 .card1{
     margin: 20px;
@@ -164,7 +183,7 @@ margin-top: -28%;
 .produtostitulo{
     color:white;
     text-align: center;
-    margin-top:100px;
+    margin-top:70px;
     text-transform: uppercase;
     border:hidden;
     width:30%;
@@ -191,7 +210,8 @@ margin-top: -28%;
 }
 
 .agoravai{
-    margin-top:80px;
+    margin-top:70px;
+    margin-bottom: 70px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -232,7 +252,7 @@ margin-top: -28%;
 
 }
 .container01{
-    margin-top:90px;
+    margin-top:80px;
     background-color: white;
     box-shadow: 0 0 20px 10px rgba(129, 128, 128, 0.712);
 
@@ -243,7 +263,7 @@ margin-top: -28%;
     box-shadow: 0 0 20px 10px rgba(129, 128, 128, 0.712);
 }
 .entrecontato{
-    margin-top:100px;
+    margin-top:80px;
     margin:80px;
     text-align:center;
     border:hidden;
@@ -257,10 +277,11 @@ margin-top: -28%;
 }
 .contatoslista{
     position:relative;
-    margin-top:150px;
+    margin-top:80px;
     text-align: center;
-    width:40%;
-    margin-left: 80px;
+    width:48%;
+    height: auto;
+    margin-left: 30px;
     border: hidden;
     border-radius: 10px;
     box-shadow: 0 0 20px 10px rgba(129, 128, 128, 0.712);   
@@ -308,7 +329,7 @@ margin-top: -28%;
     flex-direction: row;
     justify-content: space-around;
     margin:380px;
-    margin-top:-632px;
+    margin-top:-732px;
     margin-left: 52%;
     width: 45%;
     box-shadow: 0 0 20px 10px rgba(129, 128, 128, 0.712);
@@ -320,7 +341,7 @@ margin-top: -28%;
     flex-direction: row;
     justify-content: space-around;
     margin:480px;
-    margin-top:-202px;
+    margin-top:-332px;
     width: 45%;
     margin-left: 52%;
     box-shadow: 0 0 20px 10px rgba(129, 128, 128, 0.712);
