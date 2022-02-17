@@ -33,7 +33,7 @@ submit.addEventListener('click', function(event){
 
     
         if(nome.value.length < 3){
-            nome.classList.add("err");
+            //nome.classList.add("err");
             msgNome.innerText = "Nome inválido";
             return false
         }   nome.classList.add("ok");
@@ -42,7 +42,7 @@ submit.addEventListener('click', function(event){
         
 
         if(sobrenome.value.length < 3){
-            nome.classList.add("err");
+           // nome.classList.add("err");
             msgSobreNome.innerText = "Sobrenome inválido"
             return false
         }   nome.classList.add("ok");
@@ -50,9 +50,9 @@ submit.addEventListener('click', function(event){
         
         
 
-        if(email.value.indexOf("@") == -1 || email.value.indexOf(".") == -1){
-            email.classList.add("err");
-            msgEmail.innerText = "E-mail inválido";
+        if(email.value.indexOf("@") == -1 || email.value.indexOf(".com") == -1){
+           // email.classList.add("err");
+            msgEmail.innerText = `E-mail inválido`;
             return false
         }   email.classList.add("ok");
             msgEmail.innerText = "";
@@ -60,7 +60,7 @@ submit.addEventListener('click', function(event){
         
        
         if(senha.value.length < 8){
-            senha.classList.add("err");
+           // senha.classList.add("err");
             msgSenha.innerText = "Senha inválida";
             return false
         }   senha.classList.add("ok");
@@ -69,14 +69,14 @@ submit.addEventListener('click', function(event){
 
         if(confirrm.value.length !== senha.value.length || confirrm.value.length == ""){
             msgConfirrm.innerText = "Senha incorreta";
-            confirrm.classList.add("err");
+            //confirrm.classList.add("err");
             return false
         }   confirrm.classList.add("ok");
             msgConfirrm.innerText = "";
 
 
         if(cb.checked == false){
-            erro.innerHTML = `é importante ler e aceitar os termos de uso.`;
+            erro.innerHTML = `É importante ler e aceitar os termos de uso.`;
             return false
         }
         erro.innerHTML = ``;

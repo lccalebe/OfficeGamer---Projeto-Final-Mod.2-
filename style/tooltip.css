@@ -1,0 +1,39 @@
+.tooltip {
+    cursor: pointer;
+    display: block;
+    position: relative;
+    width: 100px;
+  }
+  div.tooltip span {
+    position: absolute;
+    text-align: center;
+    visibility: hidden;
+    background-color: #000;
+    color: #FFF;
+    padding: 5px 10px;
+  }
+  div.tooltip span:after {
+    content: '';
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -8px;
+    width: 0; height: 0;
+    border-bottom: 8px solid #000;
+    border-right: 8px solid transparent;
+    border-left: 8px solid transparent;
+  }
+  div:hover.tooltip span {
+    visibility: visible;
+    opacity: 0.9;
+    top: 30px;
+    left: 0;
+    z-index: 999;
+  }
+
+.tool-name{
+    margin-top: -28px;
+    margin-left: 23em;
+    color: rgba(228, 10, 10, 0.521);
+    position:relative;
+}
